@@ -1,0 +1,12 @@
+[
+  {
+    "fecha": "2025-11-10",
+    "grado": "7°",
+    "actividad": "Resolver ejercicios en http://example.com"
+  },
+  {
+    "fecha": "2025-11-10",
+    "grado": "8°",
+    "actividad": "Leer el artículo http://example.org"
+  }
+]

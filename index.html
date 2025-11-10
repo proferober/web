@@ -1,118 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Fascinante Historia de Pi ($\pi$)</title>
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #004a7c;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        section {
-            padding: 20px;
-            margin-bottom: 30px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-        h2 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        .pi-symbol {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #cc0000;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Actividades Diarias</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <input type="date" id="selectorFecha">
+    <select id="selectorGrado">
+      <!-- opciones de grados -->
+    </select>
+  </header>
 
-    <header>
-        <h1>La Fascinante Historia de Pi (<span class="pi-symbol">&pi;</span>)</h1>
-    </header>
+  <main id="contenido"></main>
 
-    <div class="container">
-        <section id="introduccion">
-            <h2>🌍 Introducción: El Número Mágico</h2>
-            <p><strong>Pi ($\pi$)</strong> es, quizás, la constante matemática más famosa. Se define como la razón entre la **circunferencia** de un círculo y su **diámetro**. Es un número **irracional** (no puede expresarse como una fracción simple) y **trascendente** (no es la raíz de ninguna ecuación polinómica con coeficientes enteros), cuya secuencia de decimales es infinita y no periódica: $3.1415926535...$</p>
-            <p>Su estudio ha sido un pilar en el desarrollo de las matemáticas a lo largo de la historia, desafiando a las mentes más brillantes de diversas civilizaciones.</p>
-        </section>
-
-        <section id="antiguedad">
-            <h2>📜 Pi en el Mundo Antiguo</h2>
-            <p>La necesidad de calcular el área de un círculo surgió con las primeras civilizaciones. Sus primeras aproximaciones se encuentran en textos milenarios:</p>
-            <ul>
-                <li><strong>Babilonios (c. 1900 a.C.):</strong> Una tablilla babilónica sugiere un valor implícito de $\pi \approx 3.125$.</li>
-                <li><strong>Egipcios (c. 1650 a.C.):</strong> El **Papiro de Rhind** incluye una fórmula que, al ser analizada, arroja una aproximación de $\pi \approx 3.1604$.</li>
-                <li><strong>Arquímedes de Siracusa (c. 287–212 a.C.):</strong> El gran matemático griego revolucionó el cálculo de $\pi$. Utilizando un método de **agotamiento**, inscribió y circunscribió polígonos regulares alrededor de un círculo, duplicando el número de lados hasta llegar a un polígono de 96 lados. Su resultado estableció que $\pi$ estaba entre $\frac{223}{71}$ y $\frac{22}{7}$, es decir, **$3.1408$ y $3.1428$**.</li>
-            </ul>
-        </section>
-
-        <section id="edad-media-asia">
-            <h2>🇨🇳🇮🇳 Avances en la Edad Media y Asia</h2>
-            <p>Mientras Europa pasaba por la Edad Media, el progreso continuó en Asia:</p>
-            <ul>
-                <li><strong>China:</strong> El matemático **Zu Chongzhi** (siglo V d.C.) calculó $\pi$ con una precisión asombrosa para su época, llegando a la fracción $\frac{355}{113}$, que es correcta hasta el **séptimo decimal** (3.1415929...).</li>
-                <li><strong>India:</strong> **Aryabhata** (siglo V) dio el valor de $3.1416$. Más tarde, la Escuela de Kerala (siglos XIV-XVI) desarrolló las primeras **series infinitas** para aproximar $\pi$, un concepto que se adelantó a los descubrimientos europeos del cálculo.</li>
-            </ul>
-        </section>
-
-        <section id="simbolo-moderno">
-            <h2>✍️ El Símbolo y el Cálculo Moderno</h2>
-            <p>La constante no fue conocida como $\pi$ hasta mucho más tarde.</p>
-            <ul>
-                <li><strong>El Nombre:</strong> El símbolo $\pi$ (la letra griega *pi*, inicial de la palabra griega *perimetros*, que significa perímetro) fue popularizado por el matemático suizo **Leonhard Euler** a partir de 1737, aunque fue introducido por primera vez por el galés **William Jones** en 1706.</li>
-                <li><strong>Series Infinitas:</strong> Con el desarrollo del cálculo por Newton y Leibniz en el siglo XVII, se descubrieron poderosas **series infinitas** (como la serie de Gregory-Leibniz: $\frac{\pi}{4} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \dots$) que permitieron calcular cientos de decimales.</li>
-                <li><strong>La Era Digital:</strong> Hoy en día, los ordenadores han calculado $\pi$ a **billones de dígitos**, un esfuerzo que se utiliza más como una prueba de la potencia y fiabilidad de los nuevos superordenadores y algoritmos que por necesidad práctica.</li>
-            </ul>
-        </section>
-        
-        <section id="curiosidad">
-            <h2>💡 Curiosidad: El Día de Pi</h2>
-            <p>El **Día de Pi** se celebra el **14 de marzo (3/14)**, en honor a los primeros tres dígitos de la constante. Es una celebración internacional de las matemáticas.</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Historia de Pi - Un Proyecto Educativo</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
